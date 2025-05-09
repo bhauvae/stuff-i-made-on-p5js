@@ -39,11 +39,11 @@ export default function (p5) {
 
       // inline sensor positions
       this.fx = (this.x + this.sd * cH + p5.width) % p5.width;
-      this.fy = (this.y + this.sd * sH + p5.width) % p5.width;
+      this.fy = (this.y + this.sd * sH + p5.height) % p5.height;
       this.lx = (this.x + this.sd * cHsa + p5.width) % p5.width;
-      this.ly = (this.y + this.sd * sHsa + p5.width) % p5.width;
+      this.ly = (this.y + this.sd * sHsa + p5.height) % p5.height;
       this.rx = (this.x + this.sd * cHms + p5.width) % p5.width;
-      this.ry = (this.y + this.sd * sHms + p5.width) % p5.width;
+      this.ry = (this.y + this.sd * sHms + p5.height) % p5.height;
 
       // fast pixel indexing
       const li = pixelIndex(this.lx, this.ly),
